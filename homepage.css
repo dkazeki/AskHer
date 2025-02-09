@@ -1,0 +1,84 @@
+body {
+    font-family: Cambria;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(pics/us.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.login-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+h2 {
+    margin-bottom: 15px;
+}
+.hint {
+    font-size: 14px;
+    color: rgb(123, 218, 255);
+    margin-bottom: 20px;
+}
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.key {
+    font-family: Cambria;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.key:hover {
+    background-color: white;
+}
+#clear {
+    background-color: red;
+    color: black;
+}
+#clear:hover {
+    background-color: rgb(201, 30, 30);
+}
+.empty {
+    background-color: #f4f4f4;
+    border: none;
+    cursor: default;
+}
+#passwordDisplay {
+    font-family: Cambria;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    font-family: Cambria;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf4c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+error-message {
+    margin-top: 5px;
+}

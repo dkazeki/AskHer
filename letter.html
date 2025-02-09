@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Love Letter</title>
+        <link rel="stylesheet" href="letter.css">
+    </head>
+    <body>
+        <div class="envelope">
+            <div class="letter">
+                <p id="uno">To my one and only,</p><br>
+                <p id="dos">I know that this upcoming week, our schedules won't align. But of course, I found a way
+                    to do this for you hehe.<br>I'm really lucky to have you in my life. From the moment we met, 
+                    I knew I could trust you. You're enough for me to share my worries, my fears, and everything 
+                    weighing me down. With you, I can be vulnerable. I see you as my safe place. My comfort. There's 
+                    no one else who could make me feel at peace as you do. I truly want to love you. I cherish every 
+                    memory we've made together, and I want to experience everything with you by my side. Forever.</p><br>
+                <p id="tres">Can I be your Valentine?</p><br>
+                <p id="quatro">Sincerely, Daph</p>
+                <div class="buttons">
+                    <button class="yes-button">Yes</button>
+                    <button class="no-button">No</button>
+                </div>
+                <div class="response-message"></div>
+            </div>
+            <button class="open-button">Read Letter</button>
+        </div>
+        <script>
+            const openButton=document.querySelector('.open-button');
+            const envelope=document.querySelector('.envelope');
+            const yesButton=document.querySelector('.yes-button');
+            const noButton=document.querySelector('.no-button');
+            const responseMessage=document.querySelector('.response-message');
+            openButton.addEventListener('click', ()=> {
+                envelope.classList.toggle('open');
+            });
+            yesButton.addEventListener('click', ()=> {
+                alert("Thank you, baby!");
+            });
+            noButton.addEventListener('click', ()=> {
+                alert("Aww.. rejected.");
+            });
+        </script>
+    </body>
+</html>

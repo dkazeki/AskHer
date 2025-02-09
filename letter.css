@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(pics/her.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.envelope {
+    width: 700px;
+    height: 600px;
+    background-color: #f8b77f;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.letter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    max-height: 90%;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.envelope.open .letter {
+    transform: translateX(-50%) translateY(30px);
+    opacity: 1;
+}
+p {
+    font-family: Arial;
+    font-weight: bold;
+}
+#tres {
+    color: #ff1200;
+}
+button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff1493;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.yes-button, .no-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #32cd32;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 195px;
+    margin-left: 200px;
+}
+.yes-button:hover {
+    background-color: #228b22;
+}
+.no-button {
+    background-color: #ff3d3d;
+    margin-left: 275px;
+}
+.no-button:hover {
+    background-color: #ff1100;
+}
+.response-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
